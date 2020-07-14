@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-    <div class="block2">
+    <div class="Mycontainer Mycontainer_for_bg">
+    <div class="block_pie_second">
         <div class="imgboxleftbox">
             <img src="img/img2.png" alt="">
         </div>
         <div class="rightbox_content">
-            <div class="first_block">
+            <div class="weight_block">
                 <div class="weightbox">
-                    <h4>Выберите вес пирога:</h4>
+                    <p>Выберите вес пирога:</p>
                     <div class="radio_box">
                         <label>
                             <input type="radio" name="size" checked>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="pricebox">
                         <span>СТОИМОСТЬ:</span>
-                        <strong>630</strong>
+                        <strong id="js_price_change">630</strong>
                         <i>руб.</i>
                     </div>
                 </div>
@@ -45,16 +45,23 @@
                 <button class="in_busket" type="button">В КОРЗИНУ</button>
                 <div class="card_box">
                     <p>Оплата наличными и по карте:</p>
-                    <img src="img/visa.png" alt="">
-                    <img src="img/mc.png" alt="">
-                    <img src="img/mir.png" alt="">
+                    <ul class="cardsbox">
+                        <li>
+                            <img src="img/visa.png" alt="">
+                        </li>
+                        <li> <img src="img/mc.png" alt=""></li>
+                        <li> <img src="img/mir.png" alt=""></li>
+                    </ul>
+                    
+                   
+                   
                 </div>
             </div>
 
 
-            <div class="second_block">
-                <div class="filling_box2">
-                    <h4>Начинка пирога:</h4>
+            <div class="filling_block">
+                <div class="fillingbox">
+                    <p>Начинка пирога:</p>
                     <div class="radio_box">
                         <label>
                             <input type="radio" name="size" checked>
@@ -65,7 +72,7 @@
                             <span>КАРТОФЕЛЬ</span>
                         </label>                       
                     </div>
-                    <h4>СОСТАВ пирога:</h4>
+                    <p>СОСТАВ пирога:</p>
                     <ul class="constituent">
                         <li>Масло растительное</li>
                         <li>Дрожжи Соль</li>
@@ -83,11 +90,13 @@
         </div>
         <div class="sale_box">
             <h4>АКЦИЯ</h4>
-            <h3>-10 <span>%</span> </h3>
-            <h5>ДЕНЬ</h5>
-            <h6>РОЖДЕНИЯ</h6>
+            <strong>-10 <span>%</span> </strong>
+            <p>ДЕНЬ <br> РОЖДЕНИЯ</p>
+          
         </div>
     </div>
-</div>  
+</div> 
+
+<script src="js/common.js"></script>
 </body>
 </html>

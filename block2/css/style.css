@@ -1,0 +1,539 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h4,
+h5,
+h3,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../fonts/FuturaDemiC.eot");
+  src: url("../fonts/FuturaDemiC.eot") format("eot"), url("../fonts/FuturaDemiC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../fonts/FuturaBookC.eot");
+  src: url("../fonts/FuturaBookC.eot") format("eot"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+.Mycontainer {
+  max-width: 1810px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.Mycontainer_for_bg {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .Mycontainer_for_bg {
+    padding: 0 15px;
+  }
+}
+
+.caption_smoll {
+  font-family: "FuturaDemiC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #52831C;
+}
+
+.block_pie_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFF5CA;
+  padding: 25px 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.block_pie_second .imgboxleftbox {
+  max-width: 550px;
+  width: 100%;
+}
+
+.block_pie_second .imgboxleftbox img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .block_pie_second {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 25px 22px;
+  }
+  .block_pie_second .imgboxleftbox {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .block_pie_second .imgboxleftbox {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .block_pie_second .imgboxleftbox {
+    max-width: 490px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .block_pie_second .imgboxleftbox {
+    max-width: 550px;
+  }
+}
+
+.block_pie_second .rightbox_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: relative;
+  flex-flow: row wrap;
+}
+
+@media screen and (min-width: 992px) {
+  .block_pie_second .rightbox_content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.block_pie_second .rightbox_content .weight_block {
+  padding: 12px 0 0 15px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .block_pie_second .rightbox_content .weight_block {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .block_pie_second .rightbox_content .weight_block {
+    padding: 12px 0 0 62px;
+  }
+}
+
+.block_pie_second .rightbox_content .weight_block .weightbox p {
+  font-family: 'FuturaDemiC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.block_pie_second .rightbox_content .weight_block .weightbox .radio_box {
+  margin-top: 22px;
+}
+
+.block_pie_second .rightbox_content .weight_block .weightbox .radio_box input {
+  display: none;
+}
+
+.block_pie_second .rightbox_content .weight_block .weightbox .radio_box span {
+  display: inline-block;
+  background: white;
+  text-align: center;
+  width: 82px;
+  padding: 8px 0;
+  border: 2px solid red;
+  color: red;
+  margin-right: 5px;
+  font-family: 'FuturaBookC';
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .block_pie_second .rightbox_content .weight_block .weightbox .radio_box span {
+    margin-right: 15px;
+  }
+}
+
+.block_pie_second .rightbox_content .weight_block .weightbox .radio_box input:checked ~ span {
+  color: white;
+  background: red;
+}
+
+.block_pie_second .rightbox_content .weight_block .pricebox {
+  margin-top: 7px;
+  font-family: 'FuturaBookC';
+}
+
+.block_pie_second .rightbox_content .weight_block .pricebox span {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 900;
+}
+
+.block_pie_second .rightbox_content .weight_block .pricebox strong {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #22bb3f;
+  font-weight: bolder;
+}
+
+.block_pie_second .rightbox_content .weight_block .pricebox i {
+  font-size: 20px;
+  color: #22bb3f;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.block_pie_second .rightbox_content .weight_block .number_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 31px 0 0 28px;
+}
+
+.block_pie_second .rightbox_content .weight_block .number_box input {
+  width: 55px;
+  border: 2px solid #ee1c24;
+  background: white;
+  color: #000000;
+  text-align: center;
+  padding: 13px 0;
+  margin: 0 13px;
+}
+
+.block_pie_second .rightbox_content .weight_block .number_box span {
+  color: #ee1c24;
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 43px;
+}
+
+.block_pie_second .rightbox_content .in_busket {
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  padding: 7px 27px;
+  margin: 31px 0;
+  background-color: #00b503;
+  border: 2px solid white;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 60, 80, 0.5);
+          box-shadow: 4px 4px 5px 0px rgba(34, 60, 80, 0.5);
+}
+
+.block_pie_second .rightbox_content .card_box p {
+  font-family: FuturaDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  /* identical to box height */
+  margin-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #444444;
+}
+
+.block_pie_second .rightbox_content .card_box .cardsbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.block_pie_second .rightbox_content .card_box .cardsbox li {
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.block_pie_second .rightbox_content .filling_block {
+  padding: 12px 0 0 15px;
+  width: 311px;
+}
+
+@media screen and (min-width: 600px) {
+  .block_pie_second .rightbox_content .filling_block {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .block_pie_second .rightbox_content .filling_block {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .block_pie_second .rightbox_content .filling_block {
+    margin-left: 100px;
+    padding-left: 0px;
+  }
+}
+
+.block_pie_second .rightbox_content .filling_block p {
+  font-family: 'FuturaDemiC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.block_pie_second .rightbox_content .filling_block .radio_box {
+  margin: 30px 0 40px 0;
+}
+
+.block_pie_second .rightbox_content .filling_block .radio_box input {
+  display: none;
+}
+
+.block_pie_second .rightbox_content .filling_block .radio_box span {
+  display: inline-block;
+  background: white;
+  text-align: center;
+  padding: 4px 10px;
+  border: 1px solid #22bb3f;
+  color: #22bb3f;
+  margin-right: 15px;
+  font-family: 'FuturaBookC';
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 21px;
+}
+
+.block_pie_second .rightbox_content .filling_block .radio_box input:checked ~ span {
+  color: red;
+  border: 1px solid red;
+}
+
+.block_pie_second .rightbox_content .filling_block .constituent {
+  padding-top: 25px;
+}
+
+.block_pie_second .rightbox_content .filling_block .constituent li {
+  font-family: FuturaDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #444444;
+  position: relative;
+  padding-left: 25px;
+}
+
+.block_pie_second .rightbox_content .filling_block .constituent li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  background: #FC800D;
+  width: 8px;
+  height: 8px;
+}
+
+.block_pie_second .sale_box {
+  font-family: fantasy;
+  color: #ee1c24;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+@media screen and (min-width: 1150px) {
+  .block_pie_second .sale_box {
+    display: block;
+  }
+}
+
+.block_pie_second .sale_box strong {
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 45px;
+  letter-spacing: 3px;
+}
+
+.block_pie_second .sale_box strong span {
+  font-weight: lighter;
+}
+
+.block_pie_second .sale_box h4 {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.block_pie_second .sale_box p {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+/*# sourceMappingURL=style.css.map */

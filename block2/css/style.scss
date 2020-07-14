@@ -152,26 +152,19 @@ q:after {
 
 }
 
-@font-face {
 
-    font-family: 'FuturaDemiBold';
-
-    src: url('../fonts/FuturaDemiBold.eot');
-
-    src: url('../fonts/FuturaDemiBold.eot') format('eot'),
-
-        url('../fonts/FuturaDemiBold.woff') format('woff'),
-
-        url('../fonts/FuturaDemiBold.ttf') format('truetype');
-
-}
-
-
-
-.container {
+.Mycontainer {
     max-width: 1810px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.Mycontainer_for_bg {
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 15px;
+    }
 }
 
 .caption_smoll {
@@ -183,223 +176,16 @@ q:after {
     color: #52831C;
 }
 
-.block1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-}
-
-.img_box {
-    max-width: 450px;
-    width: 100%;
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: inline-block;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 550px;
-    }
-}
-
-.txt_box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    flex-flow: row wrap;
-    padding: 15px 0;
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        padding: 25px 0 0 15px;
-        justify-content: space-between;
-    }
-
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        padding: 25px 0 0 62px;
-        justify-content: flex-start;
-    }
-}
-
-.txt_box_left {
-
-    // flex-basis: 27%;
-    .filling_box {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: center;
-        padding-top: 13px;
-        padding-left: 5px;
-
-        div {
-            margin-right: 28px;
-        }
-
-        span {
-            font-family: "FuturaBookC";
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 23px;
-            display: block;
 
 
-            color: #000000;
-        }
-    }
-}
-
-.txt_box_left .weight {
-    margin-top: 15px;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 60px;
-    }
-
-    .weight_box {
-        padding-top: 20px;
-
-        div {
-            padding-bottom: 6px;
-        }
-
-        .weight_box_gr {
-            font-family: "FuturaBookC";
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 23px;
-            color: #000000;
-
-            i {
-                color: #22bb3f;
-            }
-        }
-
-        .weight_box_price {
-            font-family: "FuturaBookC";
-            font-style: normal;
-            font-size: 25px;
-            line-height: 23px;
-            color: #bc0e54;
-        }
-
-        input {
-            width: 17px;
-            height: 17px;
-        }
-
-        label {
-            i {
-                width: 40px;
-                height: 2px;
-                margin: 0 2px 8px 2px;
-                background-color: #fde4b7;
-                display: inline-block;
-
-                @media screen and (min-width: 1200px) {
-                    width: 100px;
-                }
-            }
-        }
-
-
-    }
-}
-
-.weight .in_busket {
-    margin-top: 15px;
-    border: none;
-    background-color: #fc800d;
-    border-bottom: 3px solid #d45500;
-    height: 65px;
-    width: 250px;
-    display: inline-block;
-    min-width: 70px;
-    padding: 0 25px;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-family: "FuturaBookC";
-    border-radius: 7px;
-    letter-spacing: -1px;
-
-    @media screen and (min-width: 1200px) {
-        width: 310px;
-    }
-}
-
-
-.txt_box_right {
-    order: -1;
-    margin-left: 15px;
-
-    
-
-    @media screen and (min-width: 500px) {
-        order: initial;
-        // margin-top: 0px;
-    }
-
-    @media screen and (min-width: 992px) {
-        margin-top: 0px;
-        width: 35%;
-        // margin-top: 10px;
-    }
-
-    @media screen and (min-width: 1300px) {
-        width: auto;
-        margin-left: 125px;
-    }
-
-    .structure {
-        padding-top: 20px;
-
-        li {
-            font-family: FuturaBookC;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 23px;
-            color: #000000;
-
-            position: relative;
-            padding-left: 18px;
-            margin-bottom: 15px;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 0;
-                background: #FC800D;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-            }
-        }
-    }
-}
-
-.block2 {
+.block_pie_second {
     display: flex;
     background: #FFF5CA;
     padding: 25px 15px;
     flex-flow: row wrap;
     justify-content: center;
     position: relative;
+
     .imgboxleftbox {
         max-width: 550px;
         width: 100%;
@@ -414,16 +200,25 @@ q:after {
     @media screen and (min-width: 992px) {
         justify-content: flex-start;
         padding: 25px 22px;
+
         .imgboxleftbox {
             max-width: 350px;
         }
     }
-    @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1150px) {
         .imgboxleftbox {
-            max-width: 500px;
+            max-width: 400px;
         }
     }
+
     @media screen and (min-width: 1300px) {
+
+        .imgboxleftbox {
+            max-width: 490px;
+        }
+    }
+    @media screen and (min-width: 1400px) {
 
         .imgboxleftbox {
             max-width: 550px;
@@ -442,9 +237,10 @@ q:after {
             justify-content: flex-start;
         }
 
-        .first_block {
+        .weight_block {
             padding: 12px 0 0 15px;
-            margin-bottom: 40px;  
+            margin-bottom: 40px;
+
             @media screen and (min-width: 992px) {
                 margin-bottom: 0px;
             }
@@ -455,7 +251,7 @@ q:after {
 
             .weightbox {
 
-                h4 {
+                p {
                     font-family: 'FuturaDemiC';
                     font-style: normal;
                     font-weight: 600;
@@ -486,6 +282,7 @@ q:after {
                         font-weight: 900;
                         font-size: 20px;
                         text-transform: uppercase;
+
                         @media screen and (min-width: 1200px) {
                             margin-right: 15px;
                         }
@@ -577,21 +374,31 @@ q:after {
                 color: #444444;
             }
 
-            img {
-                display: inline-block;
-                margin-right: 9px;
+            .cardsbox {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                li{
+                    display: inline-block;
+                    margin-right: 9px;
+                }
+                
             }
         }
     }
 }
 
-.rightbox_content .second_block {
+.block_pie_second .rightbox_content .filling_block {
     padding: 12px 0 0 15px;
     width: 311px;
-    
+
+    @media screen and (min-width: 600px) {
+        width: auto;
+    }
+
     @media screen and (min-width: 992px) {
         padding-left: 15px;
-        width: auto;
+
     }
 
     @media screen and (min-width: 1500px) {
@@ -599,7 +406,7 @@ q:after {
         padding-left: 0px;
     }
 
-    h4 {
+    p {
         font-family: 'FuturaDemiC';
         font-style: normal;
         font-weight: 600;
@@ -669,7 +476,7 @@ q:after {
     }
 }
 
-.block2 .sale_box {
+.block_pie_second .sale_box {
     font-family: fantasy;
     color: #ee1c24;
     text-align: center;
@@ -678,11 +485,11 @@ q:after {
     right: 20px;
     display: none;
 
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1150px) {
         display: block;
     }
 
-    h3 {
+    strong {
         font-size: 30px;
         font-weight: bolder;
         line-height: 45px;
@@ -698,16 +505,12 @@ q:after {
         letter-spacing: 4px;
     }
 
-    h5 {
-        font-size: 18px;
+    p {
+        font-size: 15px;
         font-weight: 900;
         font-family: sans-serif;
         line-height: 30px;
     }
 
-    h6 {
-        font-size: 14px;
-        font-weight: 900;
-        font-family: sans-serif;
-    }
+   
 }

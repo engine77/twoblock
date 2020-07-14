@@ -1,0 +1,424 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h4,
+h5,
+h3,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../fonts/FuturaDemiC.eot");
+  src: url("../fonts/FuturaDemiC.eot") format("eot"), url("../fonts/FuturaDemiC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../fonts/FuturaBookC.eot");
+  src: url("../fonts/FuturaBookC.eot") format("eot"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaDemiBold';
+  src: url("../fonts/FuturaDemiBold.eot");
+  src: url("../fonts/FuturaDemiBold.eot") format("eot"), url("../fonts/FuturaDemiBold.woff") format("woff"), url("../fonts/FuturaDemiBold.ttf") format("truetype");
+}
+
+.Mycontainer {
+  max-width: 1810px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.caption_smoll {
+  font-family: "FuturaDemiC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #52831C;
+}
+
+.block_pie_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 950px) {
+  .block_pie_first {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.block_pie_first .img_box {
+  max-width: 450px;
+  width: 100%;
+}
+
+.block_pie_first .img_box img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .block_pie_first .img_box {
+    max-width: 550px;
+  }
+}
+
+.block_pie_first .txt_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  padding: 15px 0;
+}
+
+@media screen and (min-width: 950px) {
+  .block_pie_first .txt_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 25px 0 0 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block_pie_first .txt_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 25px 0 0 62px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.block_pie_first .txt_box_left {
+  max-width: 320px;
+}
+
+.block_pie_first .txt_box_left .filling_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  padding-top: 13px;
+  padding-left: 5px;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.block_pie_first .txt_box_left .filling_box .filling_name {
+  margin-right: 28px;
+}
+
+.block_pie_first .txt_box_left .filling_box span {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: block;
+  color: #000000;
+}
+
+.block_pie_first .txt_box_left .weight {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .block_pie_first .txt_box_left .weight {
+    margin-top: 60px;
+  }
+}
+
+.block_pie_first .txt_box_left .weight .weight_box {
+  padding-top: 20px;
+}
+
+.block_pie_first .txt_box_left .weight .weight_box div {
+  padding-bottom: 6px;
+}
+
+.block_pie_first .txt_box_left .weight .weight_box .weight_box_gr {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.block_pie_first .txt_box_left .weight .weight_box .weight_box_gr i {
+  color: #22bb3f;
+}
+
+.block_pie_first .txt_box_left .weight .weight_box .weight_box_price {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-size: 25px;
+  line-height: 23px;
+  color: #bc0e54;
+}
+
+.block_pie_first .txt_box_left .weight .weight_box input {
+  width: 17px;
+  height: 17px;
+}
+
+.block_pie_first .txt_box_left .weight .weight_box label i {
+  width: 40px;
+  height: 2px;
+  margin: 0 2px 8px 2px;
+  background-color: #fde4b7;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .block_pie_first .txt_box_left .weight .weight_box label i {
+    width: 100px;
+  }
+}
+
+.block_pie_first .weight .in_busket {
+  margin-top: 15px;
+  border: none;
+  background-color: #fc800d;
+  border-bottom: 3px solid #d45500;
+  height: 65px;
+  width: 250px;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: "FuturaBookC";
+  border-radius: 7px;
+  letter-spacing: -1px;
+}
+
+@media screen and (min-width: 1200px) {
+  .block_pie_first .weight .in_busket {
+    width: 310px;
+  }
+}
+
+.block_pie_first .txt_box_right {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-left: 15px;
+  width: 270px;
+}
+
+@media screen and (min-width: 500px) {
+  .block_pie_first .txt_box_right {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .block_pie_first .txt_box_right {
+    margin-top: 0px;
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .block_pie_first .txt_box_right {
+    width: auto;
+    margin-left: 125px;
+  }
+}
+
+.block_pie_first .txt_box_right .structure {
+  padding-top: 20px;
+}
+
+.block_pie_first .txt_box_right .structure li {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+
+.block_pie_first .txt_box_right .structure li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  background: #FC800D;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
