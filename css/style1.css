@@ -361,7 +361,6 @@ q:after {
       -ms-flex-order: -1;
           order: -1;
   margin-left: 15px;
-  margin-top: 10px;
 }
 
 @media screen and (min-width: 500px) {

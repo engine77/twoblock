@@ -345,7 +345,7 @@ q:after {
     order: -1;
     margin-left: 15px;
 
-    margin-top: 10px;
+    
 
     @media screen and (min-width: 500px) {
         order: initial;
@@ -355,6 +355,7 @@ q:after {
     @media screen and (min-width: 992px) {
         margin-top: 0px;
         width: 35%;
+        // margin-top: 10px;
     }
 
     @media screen and (min-width: 1300px) {
