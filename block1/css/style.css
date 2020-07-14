@@ -141,7 +141,7 @@ q:after {
   src: url("../fonts/FuturaDemiBold.eot") format("eot"), url("../fonts/FuturaDemiBold.woff") format("woff"), url("../fonts/FuturaDemiBold.ttf") format("truetype");
 }
 
-.Mycontainer {
+.block-content {
   max-width: 1810px;
   margin: 0 auto;
   padding: 0 15px;
@@ -169,7 +169,7 @@ q:after {
           align-items: center;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 992px) {
   .block_pie_first {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -224,7 +224,7 @@ q:after {
   padding: 15px 0;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 992px) {
   .block_pie_first .txt_box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -285,7 +285,7 @@ q:after {
 }
 
 .block_pie_first .txt_box_left .filling_box .filling_name {
-  margin-right: 15px;
+  margin-right: 8px;
   margin-bottom: 10px;
 }
 

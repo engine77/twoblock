@@ -135,18 +135,18 @@ q:after {
   src: url("../fonts/FuturaBookC.eot") format("eot"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
 }
 
-.Mycontainer {
+.block-content {
   max-width: 1810px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.Mycontainer_for_bg {
+.block-content_for_bg {
   padding: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .Mycontainer_for_bg {
+  .block-content_for_bg {
     padding: 0 15px;
   }
 }
@@ -243,6 +243,7 @@ q:after {
 .block_pie_second .rightbox_content .weight_block {
   padding: 12px 0 0 15px;
   margin-bottom: 40px;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 992px) {
@@ -288,6 +289,7 @@ q:after {
   font-weight: 900;
   font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 7px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -302,7 +304,6 @@ q:after {
 }
 
 .block_pie_second .rightbox_content .weight_block .pricebox {
-  margin-top: 7px;
   font-family: 'FuturaBookC';
 }
 
@@ -406,12 +407,12 @@ q:after {
 .block_pie_second .rightbox_content .filling_block {
   padding: 12px 0 0 15px;
   width: 311px;
-  max-width: 250px;
 }
 
 @media screen and (min-width: 600px) {
   .block_pie_second .rightbox_content .filling_block {
     width: auto;
+    max-width: 250px;
   }
 }
 
@@ -529,7 +530,7 @@ q:after {
   font-weight: lighter;
 }
 
-.block_pie_second .sale_box h4 {
+.block_pie_second .sale_box div {
   font-size: 24px;
   letter-spacing: 4px;
 }
