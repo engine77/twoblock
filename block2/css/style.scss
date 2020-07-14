@@ -391,19 +391,21 @@ q:after {
 .block_pie_second .rightbox_content .filling_block {
     padding: 12px 0 0 15px;
     width: 311px;
-
+    max-width: 250px;
     @media screen and (min-width: 600px) {
         width: auto;
+       
     }
 
     @media screen and (min-width: 992px) {
         padding-left: 15px;
-
+        max-width: 250px;
     }
 
     @media screen and (min-width: 1500px) {
         margin-left: 100px;
         padding-left: 0px;
+        max-width: 395px;
     }
 
     p {
@@ -418,7 +420,7 @@ q:after {
     }
 
     .radio_box {
-        margin: 30px 0 40px 0;
+        margin: 30px 0 35px 0;
 
         input {
             display: none;
@@ -437,6 +439,7 @@ q:after {
             font-size: 20px;
             text-transform: uppercase;
             border-radius: 21px;
+            margin-bottom: 5px;
         }
 
         input:checked~span {

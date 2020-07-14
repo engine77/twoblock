@@ -187,207 +187,229 @@ q:after {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media screen and (min-width: 950px) {
         flex-direction: row;
         align-items: flex-start;
     }
 
 
-.img_box {
-    max-width: 450px;
-    width: 100%;
+    .img_box {
+        max-width: 450px;
+        width: 100%;
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: inline-block;
-    }
-         @media screen and (min-width: 768px) {
+        img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+
+        @media screen and (min-width: 768px) {
+            max-width: 450px;
+        }
+
+        @media screen and (min-width: 992px) {
             max-width: 550px;
-         }
-    
-}
+        }
 
-.txt_box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    flex-flow: row wrap;
-    padding: 15px 0;
-
-    @media screen and (min-width: 950px) {
-        flex-direction: row;
-        padding: 25px 0 0 15px;
-        justify-content: space-between;
     }
 
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        padding: 25px 0 0 62px;
-        justify-content: flex-start;
-    }
-}
-
-.txt_box_left {
-    max-width: 320px;
-    // flex-basis: 27%;
-    .filling_box {
+    .txt_box {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
-        text-align: center;
-        padding-top: 13px;
-        padding-left: 5px;
+        justify-content: center;
+        width: 100%;
         flex-flow: row wrap;
-        .filling_name {
-            margin-right: 28px;
+        padding: 15px 0;
+
+        @media screen and (min-width: 950px) {
+            flex-direction: row;
+            padding: 25px 0 0 15px;
+            justify-content: space-between;
         }
 
-        span {
-            font-family: "FuturaBookC";
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 23px;
-            display: block;
-
-
-            color: #000000;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            padding: 25px 0 0 62px;
+            justify-content: flex-start;
         }
     }
-}
 
-.txt_box_left .weight {
-    margin-top: 15px;
+    .txt_box_left {
+        max-width: 310px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 60px;
-    }
+        @media screen and (min-width: 992px) {
+            max-width: 290px;
 
-    .weight_box {
-        padding-top: 20px;
-
-        div {
-            padding-bottom: 6px;
         }
 
-        .weight_box_gr {
-            font-family: "FuturaBookC";
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 23px;
-            color: #000000;
+        @media screen and (min-width: 1200px) {
+            max-width: 330px;
 
-            i {
-                color: #22bb3f;
-            }
         }
 
-        .weight_box_price {
-            font-family: "FuturaBookC";
-            font-style: normal;
-            font-size: 25px;
-            line-height: 23px;
-            color: #bc0e54;
-        }
+        .filling_box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: center;
+            padding-top: 13px;
+            padding-left: 5px;
+            flex-flow: row wrap;
 
-        input {
-            width: 17px;
-            height: 17px;
-        }
-
-        label {
-            i {
-                width: 40px;
-                height: 2px;
-                margin: 0 2px 8px 2px;
-                background-color: #fde4b7;
-                display: inline-block;
+            .filling_name {
+                margin-right: 15px;
+                margin-bottom: 10px;
 
                 @media screen and (min-width: 1200px) {
-                    width: 100px;
+                    margin-right: 24px;
+                }
+            }
+
+            span {
+                font-family: "FuturaBookC";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 23px;
+                display: block;
+
+
+                color: #000000;
+            }
+        }
+    }
+
+    .txt_box_left .weight {
+        margin-top: 15px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 60px;
+        }
+
+        .weight_box {
+            padding-top: 20px;
+
+            div {
+                padding-bottom: 6px;
+            }
+
+            .weight_box_gr {
+                font-family: "FuturaBookC";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 23px;
+                color: #000000;
+
+                i {
+                    color: #22bb3f;
+                }
+            }
+
+            .weight_box_price {
+                font-family: "FuturaBookC";
+                font-style: normal;
+                font-size: 25px;
+                line-height: 23px;
+                color: #bc0e54;
+            }
+
+            input {
+                width: 17px;
+                height: 17px;
+            }
+
+            label {
+                i {
+                    width: 40px;
+                    height: 2px;
+                    margin: 0 2px 8px 2px;
+                    background-color: #fde4b7;
+                    display: inline-block;
+
+                    @media screen and (min-width: 1200px) {
+                        width: 100px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .weight .in_busket {
+        margin-top: 15px;
+        border: none;
+        background-color: #fc800d;
+        border-bottom: 3px solid #d45500;
+        height: 65px;
+        width: 250px;
+        display: inline-block;
+        min-width: 70px;
+        padding: 0 25px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        font-family: "FuturaBookC";
+        border-radius: 7px;
+        letter-spacing: -1px;
+
+        @media screen and (min-width: 1200px) {
+            width: 310px;
+        }
+    }
+
+
+    .txt_box_right {
+        order: -1;
+        margin-left: 15px;
+        width: 100%;
+        max-width: 310px;
+
+        @media screen and (min-width: 500px) {
+            order: initial;
+            width: auto;
+        }
+
+        @media screen and (min-width: 992px) {
+            margin-top: 0px;
+            width: 35%;
+        }
+
+        @media screen and (min-width: 1300px) {
+            width: auto;
+            margin-left: 125px;
+        }
+
+        .structure {
+            padding-top: 20px;
+
+            li {
+                font-family: FuturaBookC;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 23px;
+                color: #000000;
+
+                position: relative;
+                padding-left: 18px;
+                margin-bottom: 15px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    background: #FC800D;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
                 }
             }
         }
-
-
     }
-}
-
-.weight .in_busket {
-    margin-top: 15px;
-    border: none;
-    background-color: #fc800d;
-    border-bottom: 3px solid #d45500;
-    height: 65px;
-    width: 250px;
-    display: inline-block;
-    min-width: 70px;
-    padding: 0 25px;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-family: "FuturaBookC";
-    border-radius: 7px;
-    letter-spacing: -1px;
-
-    @media screen and (min-width: 1200px) {
-        width: 310px;
-    }
-}
-
-
-.txt_box_right {
-    order: -1;
-    margin-left: 15px;
-    width: 270px;
-    
-
-    @media screen and (min-width: 500px) {
-        order: initial;
-        width: auto;
-    }
-
-    @media screen and (min-width: 992px) {
-        margin-top: 0px;
-        width: 35%;
-    }
-
-    @media screen and (min-width: 1300px) {
-        width: auto;
-        margin-left: 125px;
-    }
-
-    .structure {
-        padding-top: 20px;
-
-        li {
-            font-family: FuturaBookC;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 23px;
-            color: #000000;
-
-            position: relative;
-            padding-left: 18px;
-            margin-bottom: 15px;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 0;
-                background: #FC800D;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-            }
-        }
-    }
-}
 }
